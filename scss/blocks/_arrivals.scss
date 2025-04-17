@@ -1,0 +1,23 @@
+.arrivals {
+    background: #fcf8f7;
+    padding: 25px;
+    padding-bottom: 44px;
+    h2 {
+        font-weight: 400;
+        font-size: 96px;
+        color: #6d0000;
+    }
+    span {
+        display: block;
+        border: 2px solid #000;
+        width: 210px;
+        margin-bottom: 49px;
+    }
+    ul {
+        margin-bottom: 79px;
+    }
+    &__btn {
+        padding: 17px 62px;
+        max-width: 300px;
+    }
+}

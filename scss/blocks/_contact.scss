@@ -1,0 +1,114 @@
+.contact {
+    padding-top: 49px;
+    padding-bottom: 105px;
+    &__wrap {
+        margin-top: 132px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p {
+            font-weight: 400;
+            font-size: 30px;
+            max-width: 537px;
+            a {
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+            }
+        }
+    }
+    &__map {
+        width: 42vw;
+        height: 31vw;
+    }
+}
+.form {
+    max-width: 754px;
+    margin: 0 auto;
+    &__wrap {
+        margin-top: 43px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        column-gap: 54px;
+    }
+    &__input {
+        max-width: 350px;
+        input {
+            height: 50px;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        margin: 25px 0;
+        margin-bottom: 0;
+        label {
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+    }
+    button {
+        border: 1px solid #6d0000;
+        width: 375px;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding: 7px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        background-color: #fff;
+        color: #6d0000;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            color: #fff;
+            border: 1px solid #fff;
+            background-color: #6d0000;
+        }
+    }
+    label {
+        margin-bottom: 13px;
+        font-weight: 400;
+        font-size: 30px;
+        display: block;
+    }
+    input,
+    textarea {
+        background: #fff;
+        padding: 10px;
+        resize: none;
+        border: 1px solid #6d0000;
+    }
+    .policy {
+        max-width: 375px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 9px;
+
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+.form.message {
+    margin-top: 45px;
+    padding-bottom: 130px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    p {
+        font-weight: 400;
+        font-size: 30px;
+    }
+}

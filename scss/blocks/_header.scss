@@ -1,0 +1,22 @@
+.header {
+    padding-top: 27px;
+
+    border-bottom: 1px solid #000;
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__top {
+        border-bottom: 1px solid #000;
+        padding-bottom: 14px;
+    }
+
+    &__box {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 125px;
+    }
+}

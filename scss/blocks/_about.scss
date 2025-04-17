@@ -1,0 +1,40 @@
+.about {
+    text-align: center;
+    padding-bottom: 50px;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        h1 {
+            font-weight: $base-weight;
+            font-size: 96px;
+            color: #6d0000;
+        }
+
+        p {
+            font-weight: $base-weight;
+            font-size: 24px;
+        }
+    }
+    &__info {
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 68px;
+        justify-content: space-between;
+    }
+    &__btn {
+        margin: 0 auto;
+        border: 2px solid #000;
+        padding: 26px 34px;
+        box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.63);
+        background: #6d0000;
+        max-width: 450px;
+
+        font-weight: 600;
+        font-size: 40px;
+        color: #fff;
+    }
+}

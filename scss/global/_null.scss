@@ -1,0 +1,83 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+	background: $bg-color;
+	font-weight: $base-weight;
+}
+
+body {
+	color: #000;
+	line-height: 1;
+	font-family: $font-family;
+	font-size: 16px;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	font-family: inherit;
+	/* Combine link styling */
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+/*--------------------*/
+[class*="__container"] {
+    width: 90%;
+    max-width: 1440px;
+	margin: 0 auto;
+}

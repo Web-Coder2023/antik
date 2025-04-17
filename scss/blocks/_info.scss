@@ -1,0 +1,35 @@
+.info {
+    h3 {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 48px;
+        text-align: center;
+        color: #6d0000;
+    }
+
+    &__block {
+        margin-top: 37px;
+        display: flex;
+        justify-content: space-between;
+        p {
+            max-width: 574px;
+            font-weight: 400;
+            font-size: 24px;
+            text-align: right;
+            color: #000;
+            opacity: 0.75;
+        }
+    }
+
+    &__bottom {
+        position: relative;
+        p {
+            text-align: left;
+        }
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
