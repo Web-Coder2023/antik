@@ -99,13 +99,6 @@ main {
   flex: 1 1 auto;
 }
 
-.page-title {
-  font-weight: 500;
-  font-size: 64px;
-  text-align: center;
-  color: #000;
-}
-
 .logo {
   display: flex;
   flex-direction: column;
@@ -311,20 +304,18 @@ main {
 }
 .articles__search input {
   width: 100%;
-  background: #d9d9d9;
-  border: 1px solid #000;
+  background: #fff;
+  border: 1px solid #6d0000;
+  border-radius: 5px;
   padding: 3px 0;
   padding-left: 20px;
+  font-size: 20px;
 }
 .articles__search input::-moz-placeholder {
-  font-weight: 300;
-  font-size: 20px;
-  color: #000;
+  color: #6d0000;
 }
 .articles__search input::placeholder {
-  font-weight: 300;
-  font-size: 20px;
-  color: #000;
+  color: #6d0000;
 }
 .articles__list {
   display: flex;
@@ -345,21 +336,34 @@ main {
 }
 .articles__item-image {
   min-width: 250px;
+  border: 1px solid #000;
+  border-radius: 5px 0 0 5px;
 }
 .articles__item-image img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .articles__item-body {
   width: 100%;
   border: 1px solid #000;
+  border-radius: 0 5px 5px 0;
   height: 100%;
+  background-color: #fff;
+  border-left: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 36px;
+  flex-direction: column;
 }
 .articles__item-body h2 {
   font-size: 30px;
+}
+.articles__item-body p {
+  font-size: 16px;
+  text-align: center;
 }
 
 .info h3 {
@@ -546,6 +550,73 @@ main {
 .form.message p {
   font-weight: 400;
   font-size: 30px;
+}
+
+.sale {
+  padding: 58px 0;
+}
+.sale__info {
+  text-align: center;
+  max-width: 839px;
+  margin: 0 auto;
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 106px;
+}
+.sale__info h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.sale__info p {
+  font-size: 24px;
+}
+.sale__info .reception__link {
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin-top: 64px;
+}
+
+.reception {
+  padding: 58px 0;
+}
+.reception__container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.reception__container ol {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  counter-reset: item;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.reception__container ol li {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  counter-increment: item;
+  position: relative;
+  padding-left: 49px;
+}
+.reception__container ol li::before {
+  content: counter(item); /* 👈 Без точки! */
+  position: absolute;
+  left: 0;
+  top: -16px;
+  font-size: 48px;
+  opacity: 0.5;
+  color: #6d0000;
 }
 
 .card {

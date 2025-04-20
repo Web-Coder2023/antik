@@ -1,0 +1,31 @@
+.sale {
+    padding: 58px 0;
+    &__info {
+        text-align: center;
+        max-width: 839px;
+        margin: 0 auto;
+        margin-top: 58px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin-bottom: 106px;
+        h2 {
+            font-weight: 700;
+            font-size: 40px;
+            margin-top: 64px;
+            margin-bottom: 64px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        .reception__link {
+            font-weight: 700;
+            font-size: 30px;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            margin-top: 64px;
+        }
+    }
+}
