@@ -134,6 +134,25 @@ main {
   color: #6d0000;
 }
 
+.errorPage__container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.errorPage__text {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 24px;
+}
+.errorPage__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactPage .contact__form {
+  margin-top: 100px;
+}
+
 ._label-box {
   display: flex;
   align-items: center;
@@ -728,16 +747,18 @@ main {
   transform: rotate(45deg);
 }
 
-.footer__container {
+.footer__top {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 75px;
+  border-bottom: 1px solid #000;
 }
-.footer__container .black {
+.footer__top .black {
   font-weight: 400;
   font-size: 16px;
   opacity: 1;
 }
-.footer__container p {
+.footer__top p {
   font-weight: 400;
   opacity: 0.3;
   font-size: 24px;
@@ -746,4 +767,67 @@ main {
   display: flex;
   flex-direction: column;
   gap: 9px;
+}
+.footer__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 52px 0;
+}
+.footer__body h3 {
+  font-family: "Playfair", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  letter-spacing: 0.03em;
+  color: #6d0000;
+}
+.footer__subscribe {
+  width: 100%;
+  margin-right: 211px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__subscribe label {
+  font-weight: 400;
+  font-size: 30px;
+}
+.footer__subscribe button {
+  border: 1px solid #6d0000;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: #6d0000;
+}
+
+.subscribe__input input {
+  margin-top: 10px;
+  border: 1px solid #6d0000;
+  border-radius: 5px;
+  background: #f9f4f0;
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+}
+.subscribe__box {
+  display: flex;
+  align-items: flex-start;
+  gap: 33px;
+}
+.subscribe__box p {
+  font-weight: 400;
+  font-size: 12px;
+}
+.subscribe__box input {
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=style.css.map */
