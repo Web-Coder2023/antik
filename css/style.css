@@ -153,6 +153,35 @@ main {
   margin-top: 100px;
 }
 
+.policy {
+  padding-top: 50px;
+}
+.policy h1 {
+  font-size: 53px;
+  margin-bottom: 40px;
+}
+.policy .text {
+  padding-left: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+.policy .text ul {
+  padding-left: 20px;
+  max-width: 90%;
+}
+.policy .text ul li {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+.policy .text ul li::before {
+  content: "•";
+  font-size: 30px;
+  color: #6d0000;
+}
+
 ._label-box {
   display: flex;
   align-items: center;
@@ -271,13 +300,17 @@ main {
 }
 .about__btn {
   margin: 0 auto;
-  border: 2px solid #000;
   padding: 26px 34px;
-  box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.63);
-  background: #6d0000;
+  border: 2px solid #6d0000;
+  background: #fff;
   max-width: 450px;
   font-weight: 600;
   font-size: 40px;
+  color: #6d0000;
+  transition: all 0.5s ease-in-out;
+}
+.about__btn:hover {
+  background: #6d0000;
   color: #fff;
 }
 
@@ -638,6 +671,92 @@ main {
   color: #6d0000;
 }
 
+.advantages {
+  padding: 50px 0;
+}
+.advantages__list {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+}
+.advantages__list-item {
+  position: relative;
+  padding-left: 40px;
+  margin-right: auto;
+}
+.advantages__list-item p {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #000;
+}
+.advantages__list-item.right {
+  margin: 0;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 80px;
+}
+.advantages__list-item.right .advantages__number {
+  left: -50%;
+  transform: translateX(50%);
+}
+.advantages__number {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Playfair", sans-serif;
+  font-weight: 400;
+  font-size: 128px;
+  color: #6d0000;
+  opacity: 0.3;
+}
+
+.filter {
+  width: 250px;
+}
+.filter__menu div {
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.dropdown-header {
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.checkboxes {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin-top: 10px;
+}
+
+.checkboxes.collapsed {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.checkboxes label {
+  display: block;
+  margin-bottom: 5px;
+}
+
 .card {
   background: #fff;
   padding: 0 12px;
@@ -747,6 +866,9 @@ main {
   transform: rotate(45deg);
 }
 
+.footer {
+  padding-top: 100px;
+}
 .footer__top {
   display: flex;
   justify-content: space-between;

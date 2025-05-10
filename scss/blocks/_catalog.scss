@@ -1,0 +1,45 @@
+.filter {
+    width: 250px;
+    &__menu div {
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+}
+
+.dropdown-header {
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.checkboxes {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin-top: 10px;
+}
+
+.checkboxes.collapsed {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.checkboxes label {
+  display: block;
+  margin-bottom: 5px;
+}
