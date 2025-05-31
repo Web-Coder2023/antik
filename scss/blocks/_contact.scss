@@ -34,6 +34,9 @@
         grid-template-columns: repeat(2, 1fr);
         row-gap: 10px;
         column-gap: 54px;
+        @media (max-width: 400px) {
+            column-gap: 17px;
+        }
     }
     &__input {
         max-width: 350px;
@@ -56,7 +59,8 @@
     }
     button {
         border: 1px solid #6d0000;
-        width: 375px;
+        max-width: 375px;
+        width: 100%;
         margin: 0 auto;
         margin-top: 25px;
         padding: 7px 0;
@@ -81,11 +85,15 @@
         font-weight: 400;
         font-size: 30px;
         display: block;
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
     }
     input,
     textarea {
         background: #fff;
         padding: 10px;
+        border-radius: 5px;
         resize: none;
         border: 1px solid #6d0000;
     }
@@ -97,6 +105,7 @@
 
         font-weight: 400;
         font-size: 12px;
+        padding-top: 1px;
     }
 }
 .form.message {

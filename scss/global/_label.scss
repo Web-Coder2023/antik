@@ -2,14 +2,25 @@
     &-box {
         display: flex;
         align-items: center;
-        gap: 45px;
+        gap: 29px;
         &-item {
             display: flex;
             align-items: center;
-            gap: 3px;
+            gap: 10px;
 
             font-weight: $base-weight;
-            font-size: 20px;
+            font-size: 24px;
+            font-weight: 700;
+
+            svg {
+                width: 30px;
+            }
+            @media (max-width: 1400px) {
+                svg {
+                    width: 24px;
+                }
+                font-size: 19px;
+            }
         }
     }
     &-title {
@@ -18,6 +29,9 @@
         color: #6d0000;
         text-align: center;
         font-family: $second-family;
+        @media (max-width: 768px) {
+            font-size: 55px;
+        }
     }
     &-phone {
         display: flex;
@@ -34,11 +48,18 @@
     &-search {
         display: flex;
         align-items: center;
-        border: 1px solid #000;
         padding-left: 14px;
-        max-width: 243px;
+        border: 1px solid #6d0000;
+        border-radius: 5px;
+        width: 100%;
+        padding-right: 12px;
+        max-width: 354px;
+        background: #f9f4f0;
         height: 40px;
         gap: 10px;
+        @media (max-width: 1400px) {
+            max-width: 257px;
+        }
         button {
             display: flex;
             align-items: center;
@@ -48,10 +69,10 @@
             background-color: transparent;
             height: 100%;
 
-            font-weight: 300;
+            font-weight: 400;
             font-size: 20px;
             &::placeholder {
-                color: #000;
+                color: #6d0000;
             }
         }
     }

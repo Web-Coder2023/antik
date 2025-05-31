@@ -14,10 +14,18 @@
             font-size: 40px;
             margin-top: 64px;
             margin-bottom: 64px;
+            @media (max-width: 768px) {
+                font-size: 23px;
+                margin-top: 13px;
+                margin-bottom: 13px;
+            }
         }
 
         p {
             font-size: 24px;
+            @media (max-width: 768px) {
+                font-size: 19px;
+            }
         }
 
         .reception__link {
@@ -26,6 +34,13 @@
             text-decoration: underline;
             text-decoration-skip-ink: none;
             margin-top: 64px;
+            @media (max-width: 768px) {
+                font-size: 21px;
+                margin-top: 17px;
+            }
+        }
+        @media (max-width: 768px) {
+            margin-bottom: 58px;
         }
     }
 }

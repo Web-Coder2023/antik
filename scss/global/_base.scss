@@ -14,6 +14,15 @@ main {
     display: flex;
     flex-direction: column;
     gap: 21px;
+    .logo-image {
+        max-width: 435px;
+        img {
+            width: 100%;
+        }
+        @media (max-width: 1400px) {
+            max-width: 297px;
+        }
+    }
 }
 
 ._btn {

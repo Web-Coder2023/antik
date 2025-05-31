@@ -1,11 +1,17 @@
 .arrivals {
     background: #fcf8f7;
-    padding: 25px;
+    padding: 25px 5px;
     padding-bottom: 44px;
     h2 {
         font-weight: 400;
         font-size: 96px;
         color: #6d0000;
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
+        @media (max-width: 393px) {
+            font-size: 32px;
+        }
     }
     span {
         display: block;

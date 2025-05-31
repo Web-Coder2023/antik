@@ -27,6 +27,9 @@
 
     &__item {
         height: 250px;
+        @media (max-width: 768px) {
+            height: 175px;
+        }
         display: flex;
         position: relative;
         a {
@@ -45,6 +48,10 @@
                 height: 100%;
                 object-fit: cover;
             }
+            @media (max-width: 768px) {
+                min-width: 160px;
+                height: 175px;
+            }
         }
         &-body {
             width: 100%;
@@ -57,14 +64,23 @@
             align-items: center;
             justify-content: center;
             gap: 36px;
+            @media (max-width: 768px) {
+                gap: 18px;
+            }
             flex-direction: column;
             h2 {
                 font-size: 30px;
+                @media (max-width: 768px) {
+                    font-size: 22px;
+                }
             }
 
             p {
                 font-size: 16px;
                 text-align: center;
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
             }
         }
     }
