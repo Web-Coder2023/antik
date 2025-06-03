@@ -7,9 +7,36 @@
         align-items: center;
         justify-content: space-between;
     }
+    &__wrap {
+        padding: 0 10px;
+    }
 
     &__top {
         border-bottom: 1px solid #000;
         padding-bottom: 14px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .header .header__wrap .header__container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        ._label-search {
+            order: 3;
+            max-width: 500px;
+        }
+    }
+    .header {
+        &__wrap {
+            padding: 0 19px;
+            position: relative;
+        }
+        ._label-phone {
+            display: none;
+        }
+        .logo {
+            max-width: 247px;
+        }
     }
 }

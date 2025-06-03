@@ -57,3 +57,11 @@ questionsItems.forEach((item, index) => {
         }
     });
 });
+
+const burger = document.querySelector('.menu__burger');
+const menu = document.querySelector('.menu__container');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  menu.classList.toggle('open');
+});
