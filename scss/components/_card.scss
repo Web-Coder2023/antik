@@ -4,6 +4,7 @@
     padding-top: 30px;
     padding-bottom: 25px;
     max-width: 337px;
+    position: relative;
     &__slider {
         height: 195px;
     }
@@ -14,6 +15,14 @@
             width: 100%;
             height: 100%;
         }
+    }
+
+    ._link-route {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
     &__pagination {
@@ -36,6 +45,18 @@
         }
     }
 
+    &__buttons {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 3;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     h3 {
         margin-top: 10px;
         font-weight: 600;
@@ -62,6 +83,8 @@
         margin-top: 13px;
         display: flex;
         gap: 16px;
+        position: relative;
+        z-index: 51;
         button {
             width: 100%;
         }

@@ -13,53 +13,48 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__top">
-                <div class="header__container">
-                    <div class="_label-search">
-                        <button>
-                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14.3578 13.8819L19.898 19.4222C20.034 19.5581 20.034 19.7621 19.898 19.898C19.7621 20.034 19.5581 20.034 19.4222 19.898L13.8819 14.3578C12.5224 15.6154 10.6869 16.3631 8.68157 16.3631C6.57424 16.3631 4.63685 15.5134 3.24329 14.1199C1.84973 12.7263 1 10.8229 1 8.68157C1 6.57424 1.84973 4.63685 3.24329 3.24329C4.63685 1.84973 6.54025 1 8.68157 1C10.8229 1 12.7263 1.84973 14.1199 3.24329C15.5134 4.63685 16.3631 6.54025 16.3631 8.68157C16.3631 10.6869 15.6154 12.5224 14.3578 13.8819ZM13.644 3.75313C12.3864 2.49553 10.653 1.71377 8.71556 1.71377C6.77818 1.71377 5.04472 2.49553 3.78712 3.75313C2.52952 5.01073 1.74776 6.74419 1.74776 8.68157C1.74776 10.619 2.52952 12.3524 3.78712 13.61C5.04472 14.8676 6.81217 15.6494 8.71556 15.6494C10.653 15.6494 12.3864 14.8676 13.644 13.61C14.9016 12.3524 15.6834 10.585 15.6834 8.68157C15.6834 6.77818 14.9016 5.01073 13.644 3.75313Z"
-                                    fill="black" stroke="black" stroke-width="0.227" stroke-miterlimit="10" />
-                            </svg>
-                        </button>
-
-                        <input type="text" placeholder="Поиск">
-                    </div>
-                    <div class="header__box">
-                        <div class="logo">
-                            <a href="/" class="logo-image">
-                                <img src="./img/logo.png" alt="">
-                            </a>
-                            <ul class="_label-phone">
-                                <li><a href="tel:+79255448440">+7 (925) 544-84-40</a></li>
-                                <li><a href="tel:+74992432238">+7 (499) 243-22-38</a></li>
-                            </ul>
+                <div class="header__wrap">
+                    <div class="header__container">
+                        <div class="_label-search">
+                            <input type="text" id="siteSearch" placeholder="Поиск">
+                            <button>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.3578 13.8819L19.898 19.4222C20.034 19.5581 20.034 19.7621 19.898 19.898C19.7621 20.034 19.5581 20.034 19.4222 19.898L13.8819 14.3578C12.5224 15.6154 10.6869 16.3631 8.68157 16.3631C6.57424 16.3631 4.63685 15.5134 3.24329 14.1199C1.84973 12.7263 1 10.8229 1 8.68157C1 6.57424 1.84973 4.63685 3.24329 3.24329C4.63685 1.84973 6.54025 1 8.68157 1C10.8229 1 12.7263 1.84973 14.1199 3.24329C15.5134 4.63685 16.3631 6.54025 16.3631 8.68157C16.3631 10.6869 15.6154 12.5224 14.3578 13.8819ZM13.644 3.75313C12.3864 2.49553 10.653 1.71377 8.71556 1.71377C6.77818 1.71377 5.04472 2.49553 3.78712 3.75313C2.52952 5.01073 1.74776 6.74419 1.74776 8.68157C1.74776 10.619 2.52952 12.3524 3.78712 13.61C5.04472 14.8676 6.81217 15.6494 8.71556 15.6494C10.653 15.6494 12.3864 14.8676 13.644 13.61C14.9016 12.3524 15.6834 10.585 15.6834 8.68157C15.6834 6.77818 14.9016 5.01073 13.644 3.75313Z"
+                                        fill="black" stroke="black" stroke-width="0.227" stroke-miterlimit="10" />
+                                </svg>
+                            </button>
+                            <div id="searchResults" class="search-results"></div>
+                        </div>
+                        <div class="header__box">
+                            <div class="logo">
+                                <a href="/" class="logo-image">
+                                    <img src="./img/logo.png" alt="">
+                                </a>
+                                <ul class="_label-phone">
+                                    <li><a href="tel:+79255448440">+7 (925) 544-84-40</a></li>
+                                    <li><a href="tel:+74992432238">+7 (499) 243-22-38</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="_label-box">
                             <a href="#" class="_label-box-item">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                <svg width="36" height="32" viewBox="0 0 36 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M13.6396 0C12.0222 0 10.5081 0.732314 9.5 1.9593C8.49191 0.732272 6.97789 0 5.36042 0C2.40469 0 0 2.40465 0 5.36042C0 7.67491 1.38011 10.352 4.10191 13.3173C6.19655 15.5993 8.47517 17.3661 9.12363 17.8533L9.49987 18.136L9.87612 17.8534C10.5246 17.3662 12.8033 15.5993 14.898 13.3174C17.6198 10.3521 19 7.67496 19 5.36042C19 2.40465 16.5953 0 13.6396 0ZM13.9751 12.4702C12.2522 14.3471 10.3986 15.8644 9.49987 16.5637C8.60124 15.8644 6.74771 14.3471 5.02481 12.4701C2.55711 9.7817 1.25275 7.32319 1.25275 5.36042C1.25275 3.09546 3.09545 1.25275 5.36042 1.25275C6.85094 1.25275 8.22721 2.06511 8.95217 3.37285L9.5 4.36111L10.0478 3.37285C10.7727 2.06515 12.149 1.25275 13.6396 1.25275C15.9045 1.25275 17.7473 3.09541 17.7473 5.36042C17.7473 7.32327 16.4429 9.78178 13.9751 12.4702Z"
+                                        d="M4.77329 15.4583C4.04841 14.7383 3.47408 13.8811 3.08378 12.9369C2.69349 11.9926 2.49502 10.9801 2.49996 9.95835C2.49996 7.89187 3.32087 5.91003 4.78209 4.44881C6.24331 2.98759 8.22515 2.16668 10.2916 2.16668C13.1883 2.16668 15.7183 3.74335 17.0566 6.09001H19.11C19.7903 4.89662 20.7748 3.90484 21.9632 3.21567C23.1515 2.5265 24.5012 2.16455 25.875 2.16668C27.9414 2.16668 29.9233 2.98759 31.3845 4.44881C32.8457 5.91003 33.6666 7.89187 33.6666 9.95835C33.6666 12.1033 32.75 14.0833 31.3933 15.4583L18.0833 28.75L4.77329 15.4583ZM32.6766 16.76C34.4183 15 35.5 12.6167 35.5 9.95835C35.5 7.40564 34.4859 4.95748 32.6809 3.15244C30.8758 1.34741 28.4277 0.333346 25.875 0.333346C22.6666 0.333346 19.825 1.89168 18.0833 4.31168C17.1943 3.07693 16.0237 2.07193 14.6687 1.38005C13.3136 0.688167 11.8131 0.329345 10.2916 0.333346C7.73892 0.333346 5.29076 1.34741 3.48572 3.15244C1.68069 4.95748 0.666626 7.40564 0.666626 9.95835C0.666626 12.6167 1.74829 15 3.48996 16.76L18.0833 31.3533L32.6766 16.76Z"
                                         fill="black" />
                                 </svg>
                                 Избранное
                             </a>
-                            <a href="#" class="_label-box-item">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.6396 0C12.0222 0 10.5081 0.732314 9.5 1.9593C8.49191 0.732272 6.97789 0 5.36042 0C2.40469 0 0 2.40465 0 5.36042C0 7.67491 1.38011 10.352 4.10191 13.3173C6.19655 15.5993 8.47517 17.3661 9.12363 17.8533L9.49987 18.136L9.87612 17.8534C10.5246 17.3662 12.8033 15.5993 14.898 13.3174C17.6198 10.3521 19 7.67496 19 5.36042C19 2.40465 16.5953 0 13.6396 0ZM13.9751 12.4702C12.2522 14.3471 10.3986 15.8644 9.49987 16.5637C8.60124 15.8644 6.74771 14.3471 5.02481 12.4701C2.55711 9.7817 1.25275 7.32319 1.25275 5.36042C1.25275 3.09546 3.09545 1.25275 5.36042 1.25275C6.85094 1.25275 8.22721 2.06511 8.95217 3.37285L9.5 4.36111L10.0478 3.37285C10.7727 2.06515 12.149 1.25275 13.6396 1.25275C15.9045 1.25275 17.7473 3.09541 17.7473 5.36042C17.7473 7.32327 16.4429 9.78178 13.9751 12.4702Z"
-                                        fill="black" />
-                                </svg>
-                                Корзина
-                            </a>
                         </div>
                     </div>
+
+                    <button class="menu__burger"><span></span><span></span><span></span></button>
                 </div>
             </div>
-            <div class="header__container">
+            <div class="header__container menu__container">
                 <nav class="menu">
                     <div class="menu__body">
                         <ul>
@@ -77,33 +72,77 @@
         <main class="main">
             <section class="catalog">
                 <div class="catalog__container">
-                    <aside class="filter">
-                        <nav class="filter__menu">
-                            <div>Новые поступления</div>
-                            <div>Идеи для подарков</div>
-                        </nav>
+                    <h1 class="_label-title">Каталог товара</h1>
+                    <div class="catalog__wrap">
+                        <aside class="sidebar">
+                            <button class="catalog__filter-btn-close">
+                                Закрыть
+                            </button>
+                            <nav class="menu">
+                                <a href="#">Новые поступления</a>
+                                <a href="#">Идеи для подарков</a>
+                            </nav>
 
-                        <div class="dropdown">
-                            <div class="dropdown-header" id="dropdownToggle">
-                                Каталог антиквариата <span class="arrow">&#9660;</span>
+                            <div class="filter-section">
+                                <button class="filter-toggle">
+                                    Каталог антиквариата
+                                    <span class="arrow">&#9662;</span>
+                                </button>
+                                <ul class="category-list" id="categoryList">
+                                    <li><label class="checkbox"><input type="checkbox"
+                                                checked /><span></span>Антикварное
+                                            прикладное серебро</label></li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Украшения</label>
+                                    </li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Иконы</label></li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Антикварная
+                                            бронза</label></li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Фарфор и
+                                            стекло</label></li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Старинная
+                                            живопись</label></li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Карты и
+                                            гравюры</label></li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Старинные русские
+                                            книги</label></li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Антикварная
+                                            мебель</label></li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Старинный
+                                            текстиль</label></li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Антикварный
+                                            алкоголь</label></li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Винтаж</label>
+                                    </li>
+                                    <li><label class="checkbox"><input type="checkbox" /><span></span>Антиквариат
+                                            Востока</label></li>
+                                </ul>
                             </div>
-                            <div class="checkboxes" id="checkboxContainer">
-                                <label><input type="checkbox" checked /> Антикварное прикладное серебро</label>
-                                <label><input type="checkbox" /> Украшения</label>
-                                <label><input type="checkbox" /> Иконы</label>
-                                <label><input type="checkbox" /> Антикварная бронза</label>
-                                <label><input type="checkbox" /> Фарфор и стекло</label>
-                                <label><input type="checkbox" /> Старинная живопись</label>
-                                <label><input type="checkbox" /> Карты и гравюры</label>
-                                <label><input type="checkbox" /> Старинные русские книги</label>
-                                <label><input type="checkbox" /> Антикварная мебель</label>
-                                <label><input type="checkbox" /> Старинный текстиль</label>
-                                <label><input type="checkbox" /> Антикварный алкоголь</label>
-                                <label><input type="checkbox" /> Винтаж</label>
-                                <label><input type="checkbox" /> Антиквариат Востока</label>
+
+                            <div class="price-section">
+                                <h3>Цена</h3>
+                                <div class="range-wrapper">
+                                    <div class="range-slider">
+                                        <input type="range" id="rangeMin" min="0" max="224556" value="0">
+                                        <input type="range" id="rangeMax" min="0" max="224556" value="224556">
+                                        <div id="rangeTrack" class="range-track"></div>
+                                        <div id="minLabel" class="range-label">0 ₽</div>
+                                        <div id="maxLabel" class="range-label">224 556 ₽</div>
+                                    </div>
+                                </div>
                             </div>
+
+                        </aside>
+
+                        <div class="catalog__wrapper">
+                            <div class="catalog__head">
+                                <div class="catalog__filter-btn">Фильтры</div>
+                                <ul class="catalog__tags" id="tagList">
+                                </ul>
+                            </div>
+                            <ul class="product__list">
+                            </ul>
                         </div>
-                    </aside>
+                    </div>
                 </div>
             </section>
         </main>
@@ -141,9 +180,299 @@
             </div>
         </footer>
     </div>
+    <div class="modal" id="myModal">
+        <div class="modal__body">
+            <button class="close" data-modal="close">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="contact__form">
+                <h1 class="_label-title">Оставьте заявку</h1>
+                <!-- <h1 class="_label-title">Спасибо за заявку</h1>
+                        <h1 class="_label-title">Ошибка</h1>
+                        <div class="form message">
+                            <p>Ваша заявка успешно отправлена!</p>
+                            <p>
+                                <strong>
+                                    Наша команда уже работает над вашей заявкой и в скором времени свяжется с вами одним из
+                                    указанных вами способов!
+                                </strong>
+                            </p>
+                            <p>Спасибо, что выбрали “Элит Антик”</p>
+                        </div>
+                        <div class="form message">
+                            <p>Во время отправки что-то пошло не так...</p>
+                            <p>
+                                <strong>
+                                    Проверьте ваше подключение к интернету, перезагрузите страницу и попробуйте снова
+                                </strong>
+                            </p>
+                            <p>С уважением, команда “Элит Антик”</p>
+                        </div> -->
+                <form class="form">
+                    <div class="form__wrap">
+                        <div class="form__input">
+                            <label for="name">Имя*</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="form__input">
+                            <label for="subname">Фамилия*</label>
+                            <input type="text" id="subname">
+                        </div>
+                        <div class="form__input">
+                            <label for="email">E-mail адрес*</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="form__input">
+                            <label for="phone">Телефон*</label>
+                            <input type="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="form__text">
+                        <label for="#textarea">Что хотите продать?*</label>
+                        <textarea id="textarea"></textarea>
+                    </div>
+                    <button type="submit">Отправить</button>
+                    <p class="policy">Нажимая кнопку “Отправить”, вы принимаете условия <strong><a
+                                href="/policy">Политики конфиденциальости</a></strong></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const productList = document.querySelector(".product__list");
+            const checkboxes = document.querySelectorAll('.checkbox input[type="checkbox"]');
+            const tagList = document.getElementById("tagList");
+
+            const minRange = document.getElementById("rangeMin");
+            const maxRange = document.getElementById("rangeMax");
+            const track = document.getElementById("rangeTrack");
+            const minLabel = document.getElementById("minLabel");
+            const maxLabel = document.getElementById("maxLabel");
+
+            let allProducts = [];  // массив с товарами
+
+            // Создаёт HTML карточки товара
+            const createCardHTML = (category, title, price, image) => {
+                return `
+<li class="card" data-category="${category}" data-price="${price}">
+    <div class="swiper card__slider">
+        <div class="swiper-wrapper">
+            ${Array(4).fill(`<div class="swiper-slide card__slide">
+                <div class="card__image"><img src="${image}" alt=""></div>
+            </div>`).join('')}
+        </div>
+    </div>
+    <div class="card__pagination"></div>
+    <h3>${title}</h3>
+    <div class="card__price">${price.toLocaleString('ru-RU')} ₽</div>
+    <ul class="card__tag">
+        <li class="card__tag-item">Страна</li>
+        <li class="card__tag-item">Город</li>
+        <li class="card__tag-item">Имя</li>
+        <li class="card__tag-item">Мастер</li>
+    </ul>
+    <div class="card__footer">
+        <button data-modal="open" data-target="#myModal" class="_btn-transparent">Узнать цену</button>
+        <button class="_btn-transparent">в избранное</button>
+    </div>
+    <a class="_link-route" href='/products-item.html'></a>
+</li>`;
+            };
+
+            // Загружаем JSON с товарами
+            fetch('data/product.json')
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(categoryObj => {
+                        categoryObj.items.forEach(item => {
+                            allProducts.push({
+                                category: categoryObj.category,
+                                title: item.title,
+                                price: item.price,
+                                image: item.image,
+                                html: createCardHTML(categoryObj.category, item.title, item.price, item.image)
+                            });
+                        });
+                    });
+
+                    initFiltersAndSearch();
+                    updateSlider();
+                })
+                .catch(err => {
+                    console.error("Ошибка загрузки JSON:", err);
+                });
+
+            // Обновляет позицию и метки слайдера
+            const updateSlider = () => {
+                if (!minRange || !maxRange || !track || !minLabel || !maxLabel) return;
+                let minVal = parseInt(minRange.value);
+                let maxVal = parseInt(maxRange.value);
+
+                if (minVal > maxVal) {
+                    [minVal, maxVal] = [maxVal, minVal];
+                    minRange.value = minVal;
+                    maxRange.value = maxVal;
+                }
+
+                const percentMin = ((minVal - minRange.min) / (minRange.max - minRange.min)) * 100;
+                const percentMax = ((maxVal - minRange.min) / (minRange.max - minRange.min)) * 100;
+
+                track.style.left = percentMin + "%";
+                track.style.width = (percentMax - percentMin) + "%";
+
+                minLabel.style.left = percentMin + "%";
+                maxLabel.style.left = percentMax + "%";
+
+                minLabel.textContent = `${minVal.toLocaleString('ru-RU')} ₽`;
+                maxLabel.textContent = `${maxVal.toLocaleString('ru-RU')} ₽`;
+
+                renderFilteredProducts();
+            };
+
+            // Показывает отфильтрованные товары на странице
+            const renderFilteredProducts = () => {
+                const selectedCategories = Array.from(checkboxes)
+                    .filter(cb => cb.checked)
+                    .map(cb => cb.parentElement.textContent.trim().replace(/\s+/g, ' '));
+
+                const minPrice = parseInt(minRange.value);
+                const maxPrice = parseInt(maxRange.value);
+
+                const filtered = allProducts.filter(p =>
+                    (selectedCategories.length === 0 || selectedCategories.includes(p.category)) &&
+                    p.price >= minPrice &&
+                    p.price <= maxPrice
+                );
+
+                productList.innerHTML = filtered.map(p => p.html).join('');
+            };
+
+            // Создаёт тег выбранного фильтра
+            const createTag = (labelText, checkbox) => {
+                const exists = Array.from(tagList.children).some(li => li.dataset.text === labelText);
+                if (exists) return;
+
+                const li = document.createElement("li");
+                li.setAttribute("data-text", labelText);
+                li.className = "tag-li";
+
+                const span = document.createElement("span");
+                span.textContent = labelText;
+
+                const button = document.createElement("button");
+                button.innerHTML = "&times;";
+                button.addEventListener("click", () => {
+                    li.remove();
+                    checkbox.checked = false;
+                    renderFilteredProducts();
+                });
+
+                li.appendChild(span);
+                li.appendChild(button);
+                tagList.appendChild(li);
+            };
+
+            // Инициализирует фильтры, теги, поиск и события
+            const initFiltersAndSearch = () => {
+                // Инициализация тегов для чекбоксов
+                checkboxes.forEach((checkbox) => {
+                    const labelText = checkbox.parentElement.textContent.trim().replace(/\s+/g, ' ');
+
+                    if (checkbox.checked) {
+                        createTag(labelText, checkbox);
+                    }
+
+                    checkbox.addEventListener("change", () => {
+                        if (checkbox.checked) {
+                            createTag(labelText, checkbox);
+                        } else {
+                            const tag = Array.from(tagList.children).find(li => li.dataset.text === labelText);
+                            if (tag) tag.remove();
+                        }
+                        renderFilteredProducts();
+                    });
+                });
+
+                // Слушатели на ползунки цены
+                minRange.addEventListener("input", updateSlider);
+                maxRange.addEventListener("input", updateSlider);
+
+                // Живой поиск
+                const searchInput = document.getElementById("siteSearch");
+                const searchResults = document.getElementById("searchResults");
+
+                if (searchInput && searchResults) {
+                    const simpleProducts = allProducts.map(p => ({
+                        title: p.title,
+                        category: p.category,
+                        price: p.price,
+                        url: "/products-item.html"
+                    }));
+
+                    searchInput.addEventListener("input", () => {
+                        const query = searchInput.value.trim().toLowerCase();
+                        console.log("Поиск:", query);
+
+                        if (query.length < 2) {
+                            searchResults.style.display = "none";
+                            return;
+                        }
+
+                        const matched = simpleProducts.filter(p =>
+                            p.title.toLowerCase().includes(query) ||
+                            p.category.toLowerCase().includes(query)
+                        );
+
+                        console.log("Совпадений:", matched.length);
+
+                        if (matched.length === 0) {
+                            searchResults.innerHTML = "<ul><li>Ничего не найдено</li></ul>";
+                        } else {
+                            searchResults.innerHTML =
+                                "<ul>" +
+                                matched.map(p =>
+                                    `<li onclick="window.location.href='${p.url}'">${p.title} (${p.category}) – ${p.price.toLocaleString('ru-RU')} ₽</li>`
+                                ).join('') +
+                                "</ul>";
+                        }
+
+                        searchResults.style.display = "block";
+                    });
+
+                    document.addEventListener("click", (e) => {
+                        if (!searchResults.contains(e.target) && e.target !== searchInput) {
+                            searchResults.style.display = "none";
+                        }
+                    });
+                }
+
+                // Кнопки открытия/закрытия фильтра (sidebar)
+                const catalogFilterBtn = document.querySelector(".catalog__filter-btn");
+                const catalogFilterBtnClose = document.querySelector(".catalog__filter-btn-close");
+                const sidebar = document.querySelector(".sidebar");
+
+                if (catalogFilterBtn && catalogFilterBtnClose && sidebar) {
+                    catalogFilterBtn.addEventListener("click", () => {
+                        sidebar.classList.toggle("active");
+                        catalogFilterBtn.classList.toggle("active");
+                    });
+
+                    catalogFilterBtnClose.addEventListener("click", () => {
+                        sidebar.classList.remove("active");
+                        catalogFilterBtn.classList.remove("active");
+                    });
+                }
+            };
+        });
+    </script>
+
     <script src="./js/script.js"></script>
+
 </body>
 
 </html>

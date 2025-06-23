@@ -1,0 +1,38 @@
+[
+  {
+    "category": "Антикварное прикладное серебро",
+    "items": [
+      { "title": "Товар 1", "price": 120000, "image": "./img/p1.png" },
+      { "title": "Товар 2", "price": 250000, "image": "./img/p1.png" },
+      { "title": "Товар 3", "price": 500000, "image": "./img/p1.png" },
+      { "title": "Товар 4", "price": 750000, "image": "./img/p1.png" }
+    ]
+  },
+  {
+    "category": "Украшения",
+    "items": [
+      { "title": "Товар 1", "price": 10000, "image": "./img/p1.png" },
+      { "title": "Товар 2", "price": 30000, "image": "./img/p1.png" },
+      { "title": "Товар 3", "price": 70000, "image": "./img/p1.png" },
+      { "title": "Товар 4", "price": 120000, "image": "./img/p1.png" }
+    ]
+  },
+  {
+    "category": "Иконы",
+    "items": [
+      { "title": "Товар 1", "price": 80000, "image": "./img/p1.png" },
+      { "title": "Товар 2", "price": 90000, "image": "./img/p1.png" },
+      { "title": "Товар 3", "price": 120000, "image": "./img/p1.png" },
+      { "title": "Товар 4", "price": 200000, "image": "./img/p1.png" }
+    ]
+  },
+  {
+    "category": "Антикварная бронза",
+    "items": [
+      { "title": "Товар 1", "price": 60000, "image": "./img/p1.png" },
+      { "title": "Товар 2", "price": 85000, "image": "./img/p1.png" },
+      { "title": "Товар 3", "price": 100000, "image": "./img/p1.png" },
+      { "title": "Товар 4", "price": 150000, "image": "./img/p1.png" }
+    ]
+  }
+]

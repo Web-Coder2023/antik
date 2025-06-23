@@ -1,3 +1,7 @@
+.contactPage {
+    padding-bottom: 0 !important;
+}
+
 .contact {
     padding-top: 49px;
     padding-bottom: 105px;
@@ -5,16 +9,32 @@
         margin-top: 132px;
         display: flex;
         justify-content: space-between;
-        
+        @media (max-width: 992px) {
+            margin-top: 60px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__box {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media (max-width: 992px){
+            text-align: center;
+            gap: 10px;
+        }
         p {
             font-weight: 400;
             font-size: 30px;
             max-width: 537px;
+            @media (max-width: 992px) {
+                max-width: 100%;
+                font-size: 3vw;
+            }
+            @media (max-width: 768px) {
+                font-size: 26px;
+            }
             a {
                 text-decoration: underline;
                 text-decoration-skip-ink: none;
@@ -22,12 +42,18 @@
         }
     }
     &__map {
+        margin-top: 50px;
         width: 42vw;
         height: 31vw;
+        @media (max-width: 992px) {
+            width: 80vw;
+            height: 57vw;
+        }
     }
 }
 .form {
     max-width: 754px;
+    padding: 0 20px;
     margin: 0 auto;
     &__wrap {
         margin-top: 43px;
