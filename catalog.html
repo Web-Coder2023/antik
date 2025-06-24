@@ -240,7 +240,6 @@
         </div>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -401,55 +400,6 @@
                 // Слушатели на ползунки цены
                 minRange.addEventListener("input", updateSlider);
                 maxRange.addEventListener("input", updateSlider);
-
-                // Живой поиск
-                const searchInput = document.getElementById("siteSearch");
-                const searchResults = document.getElementById("searchResults");
-
-                if (searchInput && searchResults) {
-                    const simpleProducts = allProducts.map(p => ({
-                        title: p.title,
-                        category: p.category,
-                        price: p.price,
-                        url: "/products-item.html"
-                    }));
-
-                    searchInput.addEventListener("input", () => {
-                        const query = searchInput.value.trim().toLowerCase();
-                        console.log("Поиск:", query);
-
-                        if (query.length < 2) {
-                            searchResults.style.display = "none";
-                            return;
-                        }
-
-                        const matched = simpleProducts.filter(p =>
-                            p.title.toLowerCase().includes(query) ||
-                            p.category.toLowerCase().includes(query)
-                        );
-
-                        console.log("Совпадений:", matched.length);
-
-                        if (matched.length === 0) {
-                            searchResults.innerHTML = "<ul><li>Ничего не найдено</li></ul>";
-                        } else {
-                            searchResults.innerHTML =
-                                "<ul>" +
-                                matched.map(p =>
-                                    `<li onclick="window.location.href='${p.url}'">${p.title} (${p.category}) – ${p.price.toLocaleString('ru-RU')} ₽</li>`
-                                ).join('') +
-                                "</ul>";
-                        }
-
-                        searchResults.style.display = "block";
-                    });
-
-                    document.addEventListener("click", (e) => {
-                        if (!searchResults.contains(e.target) && e.target !== searchInput) {
-                            searchResults.style.display = "none";
-                        }
-                    });
-                }
 
                 // Кнопки открытия/закрытия фильтра (sidebar)
                 const catalogFilterBtn = document.querySelector(".catalog__filter-btn");
